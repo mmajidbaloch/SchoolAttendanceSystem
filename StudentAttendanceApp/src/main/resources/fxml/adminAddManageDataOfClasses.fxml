@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1370.0" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yourapp.attendance.controllers.AdminAddManageDataOfClassesController">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0">
+            <left>
+                <AnchorPane prefHeight="709.0" prefWidth="241.0" style="-fx-background-color: green;" stylesheets="@../css/Style.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="136.0" fitWidth="114.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="nav-form" AnchorPane.bottomAnchor="592.0" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="14.0">
+                            <image>
+                                <Image url="@../images/memberDashboardIcon.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="1.0" />
+                            </effect>
+                        </ImageView>
+                        <Label fx:id="greetingUserMessage" layoutX="24.0" layoutY="147.0" prefHeight="40.0" prefWidth="211.0" text="Hello Admin!" textFill="WHITE" AnchorPane.bottomAnchor="533.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="147.0">
+                            <font>
+                                <Font name="Calibri Bold" size="33.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="adminDashboard" layoutX="-14.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="249.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Dashboard" AnchorPane.bottomAnchor="437.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="222.0">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/home.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Line endX="76.0" layoutX="133.0" layoutY="208.0" startX="-100.0" strokeWidth="5.0" AnchorPane.bottomAnchor="509.0" AnchorPane.leftAnchor="30.5" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="205.5" />
+                        <Button fx:id="adminManageTeachers" layoutX="-7.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="245.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Manage Employes" AnchorPane.bottomAnchor="376.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="283.0">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/manage-icon.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminManageStudents" layoutX="-7.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Manage Students" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="340.0">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/manage-icon.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminManageClasses" layoutX="-7.0" layoutY="467.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="navv-btn" stylesheets="@../css/Style.css" text="Manage Classes">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/classesPng.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminSetting" layoutX="-7.0" layoutY="528.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Settings">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/setting.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminLogout" layoutX="-7.0" layoutY="645.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Logout">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fx:id="adminLogout" fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/logoutPng.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                  <Button fx:id="adminAddClasses" layoutX="-7.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Add Classes" translateY="-2.5">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="25.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/classesPng.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="1.0" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <AnchorPane prefHeight="635.0" prefWidth="952.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane prefHeight="720.0" prefWidth="1129.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <BorderPane prefHeight="463.0" prefWidth="1109.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <top>
+                                        <AnchorPane prefHeight="59.0" prefWidth="1129.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="33.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" styleClass="whitecolor" AnchorPane.bottomAnchor="19.45708465576172" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="1057.0" AnchorPane.topAnchor="20.0">
+                                                    <image>
+                                                        <Image url="@../images/schoollogo.png" />
+                                                    </image>
+                                                    <effect>
+                                                        <ColorAdjust brightness="1.0" contrast="0.48" />
+                                                    </effect>
+                                                </ImageView>
+                                                <Text fill="WHITE" layoutX="78.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Government Boys High School, Taunsa Sharif" AnchorPane.bottomAnchor="25.05859375" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="668.693359375" AnchorPane.topAnchor="22.576171875">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Text>
+                                                <Line endX="-99.92040252685547" endY="65.99992370605469" layoutX="101.0" layoutY="4.0" rotate="0.1" startX="-100.03820037841797" startY="-3.9999654293060303" stroke="WHITE" />
+                                            </children>
+                                        </AnchorPane>
+                                    </top>
+                                    <center>
+                                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <AnchorPane layoutX="1100.0" prefHeight="643.0" prefWidth="28.0" style="-fx-background-color: green;" />
+                                                <AnchorPane layoutY="612.0" prefHeight="31.0" prefWidth="1101.0" style="-fx-background-color: green;" />
+                                    <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="585.0" prefWidth="1074.0" style="-fx-background-color: white; -fx-border-color: green; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2.5;">
+                                       <children>
+                                          <AnchorPane layoutX="60.0" layoutY="20.0" prefHeight="114.0" prefWidth="241.0" style="-fx-background-color: #0e0642; -fx-background-radius: 20;">
+                                             <children>
+                                                <Button fx:id="btnClass101" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClassCardClick" prefHeight="42.0" prefWidth="241.0" style="-fx-font-size: 19; -fx-font-family: arial;" text="Class Id 101" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <Label layoutX="14.0" layoutY="58.0" text="Class: One" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="totalStudents101" layoutX="14.0" layoutY="82.0" prefHeight="19.0" prefWidth="143.0" text="Total Students: " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="419.0" layoutY="20.0" prefHeight="114.0" prefWidth="241.0" style="-fx-background-color: #0e0642; -fx-background-radius: 20;">
+                                             <children>
+                                                <Button fx:id="btnClass102" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClassCardClick" prefHeight="42.0" prefWidth="241.0" style="-fx-font-size: 19; -fx-font-family: arial;" text="Class Id 102" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <Label layoutX="14.0" layoutY="58.0" text="Class: Two" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="totalStudents102" layoutX="14.0" layoutY="82.0" prefHeight="19.0" prefWidth="143.0" text="Total Students: " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="786.0" layoutY="20.0" prefHeight="114.0" prefWidth="241.0" style="-fx-background-color: #0e0642; -fx-background-radius: 20;">
+                                             <children>
+                                                <Button fx:id="btnClass103" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClassCardClick" prefHeight="42.0" prefWidth="241.0" style="-fx-font-size: 19; -fx-font-family: arial;" text="Class Id 103" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <Label layoutX="14.0" layoutY="58.0" text="Class: Three" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="totalStudents103" layoutX="14.0" layoutY="82.0" prefHeight="19.0" prefWidth="143.0" text="Total Students: " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="60.0" layoutY="159.0" prefHeight="114.0" prefWidth="241.0" style="-fx-background-color: #0e0642; -fx-background-radius: 20;">
+                                             <children>
+                                                <Button fx:id="btnClass104" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClassCardClick" prefHeight="42.0" prefWidth="241.0" style="-fx-font-size: 19; -fx-font-family: arial;" text="Class Id 104" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <Label layoutX="14.0" layoutY="58.0" text="Class: Four" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="totalStudents104" layoutX="14.0" layoutY="82.0" prefHeight="19.0" prefWidth="143.0" text="Total Students: " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="419.0" layoutY="159.0" prefHeight="114.0" prefWidth="241.0" style="-fx-background-color: #0e0642; -fx-background-radius: 20;">
+                                             <children>
+                                                <Button fx:id="btnClass105" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClassCardClick" prefHeight="42.0" prefWidth="241.0" style="-fx-font-size: 19; -fx-font-family: arial;" text="Class Id 105" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <Label layoutX="14.0" layoutY="58.0" text="Class: Five" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="totalStudents105" layoutX="14.0" layoutY="82.0" prefHeight="19.0" prefWidth="143.0" text="Total Students: " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="786.0" layoutY="159.0" prefHeight="114.0" prefWidth="241.0" style="-fx-background-color: #0e0642; -fx-background-radius: 20;">
+                                             <children>
+                                                <Button fx:id="btnClass106" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClassCardClick" prefHeight="42.0" prefWidth="241.0" style="-fx-font-size: 19; -fx-font-family: arial;" text="Class Id 106" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <Label layoutX="14.0" layoutY="58.0" text="Class: Six" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="totalStudents106" layoutX="14.0" layoutY="82.0" prefHeight="19.0" prefWidth="143.0" text="Total Students: " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="60.0" layoutY="302.0" prefHeight="114.0" prefWidth="241.0" style="-fx-background-color: #0e0642; -fx-background-radius: 20;">
+                                             <children>
+                                                <Button fx:id="btnClass107" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClassCardClick" prefHeight="42.0" prefWidth="241.0" style="-fx-font-size: 19; -fx-font-family: arial;" text="Class Id 107" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <Label layoutX="14.0" layoutY="58.0" text="Class: Seven" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="totalStudents107" layoutX="14.0" layoutY="82.0" prefHeight="19.0" prefWidth="143.0" text="Total Students: " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="419.0" layoutY="302.0" prefHeight="114.0" prefWidth="241.0" style="-fx-background-color: #0e0642; -fx-background-radius: 20;">
+                                             <children>
+                                                <Button fx:id="btnClass108" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClassCardClick" prefHeight="42.0" prefWidth="241.0" style="-fx-font-size: 19; -fx-font-family: arial;" text="Class Id 108" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <Label layoutX="14.0" layoutY="58.0" text="Class: Eight" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="totalStudents108" layoutX="14.0" layoutY="82.0" prefHeight="19.0" prefWidth="143.0" text="Total Students: " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="786.0" layoutY="302.0" prefHeight="114.0" prefWidth="241.0" style="-fx-background-color: #0e0642; -fx-background-radius: 20;">
+                                             <children>
+                                                <Button fx:id="btnClass109" mnemonicParsing="false" onAction="#handleClassCardClick" prefHeight="42.0" prefWidth="241.0" style="-fx-font-size: 19; -fx-font-family: arial;" text="Class Id 109" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <Label layoutX="14.0" layoutY="58.0" text="Class: Nine" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="totalStudents109" layoutX="14.0" layoutY="82.0" prefHeight="19.0" prefWidth="143.0" text="Total Students: " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="60.0" layoutY="447.0" prefHeight="114.0" prefWidth="241.0" style="-fx-background-color: #0e0642; -fx-background-radius: 20;">
+                                             <children>
+                                                <Button fx:id="btnClass110" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClassCardClick" prefHeight="42.0" prefWidth="241.0" style="-fx-font-size: 19; -fx-font-family: arial;" text="Class Id 110" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <Label layoutX="14.0" layoutY="58.0" text="Class: Ten" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="totalStudents110" layoutX="14.0" layoutY="82.0" prefHeight="19.0" prefWidth="143.0" text="Total Students: " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                            </children>
+                                        </AnchorPane>
+                                    </center>
+                                </BorderPane>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                    <effect>
+                        <ColorAdjust />
+                    </effect>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</StackPane>

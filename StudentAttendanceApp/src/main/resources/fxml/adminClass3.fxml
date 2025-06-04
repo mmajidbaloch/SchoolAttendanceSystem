@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1370.0" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yourapp.attendance.controllers.AdminClass3Controller">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0">
+            <left>
+                <AnchorPane prefHeight="709.0" prefWidth="241.0" style="-fx-background-color: green;" stylesheets="@../css/Style.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="136.0" fitWidth="114.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="nav-form" AnchorPane.bottomAnchor="592.0" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="14.0">
+                            <image>
+                                <Image url="@../images/memberDashboardIcon.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="1.0" />
+                            </effect>
+                        </ImageView>
+                        <Label fx:id="greetingUserMessage" layoutX="24.0" layoutY="147.0" prefHeight="40.0" prefWidth="211.0" text="Hello Admin!" textFill="WHITE" AnchorPane.bottomAnchor="533.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="147.0">
+                            <font>
+                                <Font name="Calibri Bold" size="33.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="adminDashboard" layoutX="-14.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="249.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Dashboard" AnchorPane.bottomAnchor="437.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="222.0">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/home.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Line endX="76.0" layoutX="133.0" layoutY="208.0" startX="-100.0" strokeWidth="5.0" AnchorPane.bottomAnchor="509.0" AnchorPane.leftAnchor="30.5" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="205.5" />
+                        <Button fx:id="adminManageTeachers" layoutX="-7.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="245.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Manage Employes" AnchorPane.bottomAnchor="376.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="283.0">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/manage-icon.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminManageStudents" layoutX="-7.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Manage Students" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="340.0">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/manage-icon.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminManageClasses" layoutX="-7.0" layoutY="468.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="navv-btn" stylesheets="@../css/Style.css" text="Manage Classes">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/classesPng.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminSetting" layoutX="-7.0" layoutY="529.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Settings">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/setting.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminLogout" layoutX="-7.0" layoutY="645.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Logout">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fx:id="adminLogout" fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/logoutPng.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminAddClasses" layoutX="-9.0" layoutY="407.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Add Classes">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/classesPng.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <AnchorPane prefHeight="635.0" prefWidth="952.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane prefHeight="720.0" prefWidth="1129.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <BorderPane prefHeight="463.0" prefWidth="1109.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <top>
+                                        <AnchorPane prefHeight="59.0" prefWidth="1129.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="33.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" styleClass="whitecolor" AnchorPane.bottomAnchor="19.45708465576172" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="1057.0" AnchorPane.topAnchor="20.0">
+                                                    <image>
+                                                        <Image url="@../images/schoollogo.png" />
+                                                    </image>
+                                                    <effect>
+                                                        <ColorAdjust brightness="1.0" contrast="0.48" />
+                                                    </effect>
+                                                </ImageView>
+                                                <Text fill="WHITE" layoutX="78.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Government Boys High School, Taunsa Sharif" AnchorPane.bottomAnchor="25.05859375" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="668.693359375" AnchorPane.topAnchor="22.576171875">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Text>
+                                                <Line endX="-99.92040252685547" endY="65.99992370605469" layoutX="101.0" layoutY="4.0" rotate="0.1" startX="-100.03820037841797" startY="-3.9999654293060303" stroke="WHITE" />
+                                            </children>
+                                        </AnchorPane>
+                                    </top>
+                                    <center>
+                                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <AnchorPane layoutX="12.0" layoutY="11.0" prefHeight="584.0" prefWidth="1073.0" style="-fx-background-color: white; -fx-border-color: #9e58a1; -fx-border-width: 2; -fx-border-radius: 10;" stylesheets="@../css/Style.css">
+                                                    <children>
+                                                        <TableView fx:id="class3TableView" layoutX="20.0" layoutY="80.0" prefHeight="462.0" prefWidth="1022.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="78.0">
+                                                            <columns>
+                                                                <TableColumn fx:id="fetchStudentIdClassIdIs103" prefWidth="71.0" text="Student Id" />
+                                                                <TableColumn fx:id="fetchStudFNameClassIdIs103" prefWidth="112.0" text="First Name" />
+                                                                <TableColumn fx:id="fetchStudLNameClassIdIs103" prefWidth="120.0" text="Last Name" />
+                                                                <TableColumn fx:id="fetchStudGenderClassIdIs103" minWidth="2.0" prefWidth="103.0" text="Gender" />
+                                                                <TableColumn fx:id="takenByTeacherClass103" minWidth="2.0" prefWidth="177.0" text="Attendence" />
+                                                                <TableColumn fx:id="calculateStudentPresentDaysC103" minWidth="2.0" prefWidth="130.0" text="Attend Days" />
+                                                                <TableColumn fx:id="calculateStudentAbsentDaysC103" minWidth="2.0" prefWidth="156.0" text="Absent Days" />
+                                                            </columns>
+                                                            <columnResizePolicy>
+                                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                            </columnResizePolicy>
+                                                        </TableView>
+                                                        <Label layoutX="40.0" layoutY="34.0" text="Class: Three">
+                                                            <font>
+                                                                <Font name="System Bold" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label layoutX="266.0" layoutY="34.0" text="Class Id: 103">
+                                                            <font>
+                                                                <Font name="System Bold" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label fx:id="teacherNameWithClassId103" layoutX="432.0" layoutY="34.0" text="Teacher Username:">
+                                                            <font>
+                                                                <Font name="System Bold" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <ChoiceBox fx:id="assignAttendenceTakerTeacherC103" layoutX="869.0" layoutY="31.0" prefWidth="150.0" />
+                                                        <Button fx:id="updateStudentAttendenceRecordC103" layoutX="917.0" layoutY="530.0" mnemonicParsing="false" onAction="#updateTeacherAssignment" prefHeight="40.0" prefWidth="108.0" text="Update" translateY="3.0" />
+                                          <Text layoutX="781.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign Teacher:">
+                                             <font>
+                                                <Font name="Calibri Bold" size="13.0" />
+                                             </font>
+                                          </Text>
+                                                    </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="1100.0" prefHeight="643.0" prefWidth="28.0" style="-fx-background-color: green;" />
+                                                <AnchorPane layoutY="612.0" prefHeight="31.0" prefWidth="1101.0" style="-fx-background-color: green;" />
+                                            </children>
+                                        </AnchorPane>
+                                    </center>
+                                </BorderPane>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                    <effect>
+                        <ColorAdjust />
+                    </effect>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</StackPane>

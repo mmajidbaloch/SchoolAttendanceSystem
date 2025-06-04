@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1370.0" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yourapp.attendance.controllers.AdminSettingsController">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0">
+            <left>
+                <AnchorPane prefHeight="709.0" prefWidth="241.0" style="-fx-background-color: green; -fx-border-color: white;" stylesheets="@../css/Style.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="136.0" fitWidth="114.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="nav-form" AnchorPane.bottomAnchor="592.0" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="14.0">
+                            <image>
+                                <Image url="@../images/memberDashboardIcon.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="1.0" />
+                            </effect>
+                        </ImageView>
+                        <Label fx:id="greetingUserMessage" layoutX="24.0" layoutY="147.0" prefHeight="40.0" prefWidth="211.0" text="Hello Admin!" textFill="WHITE" AnchorPane.bottomAnchor="533.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="147.0">
+                            <font>
+                                <Font name="Calibri Bold" size="33.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="adminDashboard" layoutX="-14.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="249.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Dashboard" AnchorPane.bottomAnchor="437.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="222.0">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/home.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Line endX="76.0" layoutX="133.0" layoutY="208.0" startX="-100.0" strokeWidth="5.0" AnchorPane.bottomAnchor="509.0" AnchorPane.leftAnchor="30.5" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="205.5" />
+                        <Button fx:id="adminManageTeachers" layoutX="-7.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Manage Teachers">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/manage-icon.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminManageStudents" layoutX="-7.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Manage Students">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/manage-icon.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminManageClasses" layoutX="-9.0" layoutY="474.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Manage Classes">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/classesPng.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminSetting" layoutX="-7.0" layoutY="540.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="navv-btn" stylesheets="@../css/Style.css" text="Settings">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/setting.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminLogout" layoutX="-7.0" layoutY="645.0" mnemonicParsing="false" onAction="#handleNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Logout">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fx:id="adminLogout" fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/logoutPng.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="adminAddClasses" layoutX="-7.0" layoutY="410.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Add Classes">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/classesPng.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <AnchorPane prefHeight="635.0" prefWidth="952.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane prefHeight="720.0" prefWidth="1129.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <BorderPane prefHeight="463.0" prefWidth="1109.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <top>
+                                        <AnchorPane prefHeight="59.0" prefWidth="1129.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="33.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" styleClass="whitecolor" AnchorPane.bottomAnchor="19.45708465576172" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="1057.0" AnchorPane.topAnchor="20.0">
+                                                    <image>
+                                                        <Image url="@../images/schoollogo.png" />
+                                                    </image>
+                                                    <effect>
+                                                        <ColorAdjust brightness="1.0" contrast="0.48" />
+                                                    </effect>
+                                                </ImageView>
+                                                <Text fill="WHITE" layoutX="78.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Government Boys High School, Taunsa Sharif" AnchorPane.bottomAnchor="25.05859375" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="668.693359375" AnchorPane.topAnchor="22.576171875">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Text>
+                                                <Line endX="-99.92040252685547" endY="65.99992370605469" layoutX="101.0" layoutY="4.0" rotate="0.1" startX="-100.03820037841797" startY="-3.9999654293060303" stroke="WHITE" />
+                                            </children>
+                                        </AnchorPane>
+                                    </top>
+                                    <center>
+                                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <AnchorPane layoutX="1100.0" prefHeight="643.0" prefWidth="28.0" style="-fx-background-color: green;" />
+                                                <AnchorPane layoutY="612.0" prefHeight="31.0" prefWidth="1101.0" style="-fx-background-color: green;" />
+                                    <AnchorPane prefHeight="612.0" prefWidth="1100.0" style="-fx-background-color: #0e0642; -fx-border-color: white;">
+                                       <children>
+                                          <Label layoutX="95.0" layoutY="73.0" prefHeight="58.0" prefWidth="226.0" text="Old Password" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="95.0" layoutY="131.0" prefHeight="58.0" prefWidth="226.0" text="New Password" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="95.0" layoutY="189.0" prefHeight="58.0" prefWidth="226.0" text="Confirm Password" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <PasswordField fx:id="oldPassword" layoutX="321.0" layoutY="81.0" prefHeight="42.0" prefWidth="253.0" promptText="Enter Old Password" />
+                                          <PasswordField fx:id="newPassword" layoutX="321.0" layoutY="139.0" prefHeight="42.0" prefWidth="253.0" promptText="Enter New Password" />
+                                          <PasswordField fx:id="confirmPassword" layoutX="321.0" layoutY="197.0" prefHeight="42.0" prefWidth="253.0" promptText="Confirm New Password" />
+                                          <Button fx:id="updatePassword" layoutX="866.0" layoutY="555.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="192.0" text="Update" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial" size="14.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="333.0" fitWidth="227.0" layoutX="708.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/password.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="aboutPasswordUpdate" layoutX="314.0" layoutY="563.0" prefHeight="35.0" prefWidth="421.0" text=" " textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial" size="15.0" />
+                                             </font></Label>
+                                          <Label layoutX="95.0" layoutY="259.0" prefHeight="58.0" prefWidth="226.0" text="Security Questions" textFill="#fff300">
+                                             <font>
+                                                <Font name="Arial Bold" size="23.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="95.0" layoutY="305.0" prefHeight="58.0" prefWidth="226.0" text="What is your nickname ?" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="95.0" layoutY="354.0" prefHeight="58.0" prefWidth="285.0" text="What was your first pet name ?" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="95.0" layoutY="418.0" prefHeight="34.0" prefWidth="279.0" text="Write a word for recovery" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="enterNicknameForMoreSecurity" layoutX="396.0" layoutY="313.0" prefHeight="42.0" prefWidth="253.0" promptText="Enter Nickname" />
+                                          <TextField fx:id="enterPetnameForMoreSecurity" layoutX="396.0" layoutY="362.0" prefHeight="42.0" prefWidth="253.0" promptText="Enter Pet Name" />
+                                          <TextField fx:id="enterSecretWordForMoreSecurity" layoutX="396.0" layoutY="414.0" prefHeight="42.0" prefWidth="253.0" promptText="Enter a Word......" />
+                                       </children>
+                                    </AnchorPane>
+                                            </children>
+                                        </AnchorPane>
+                                    </center>
+                                </BorderPane>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                    <effect>
+                        <ColorAdjust />
+                    </effect>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</StackPane>

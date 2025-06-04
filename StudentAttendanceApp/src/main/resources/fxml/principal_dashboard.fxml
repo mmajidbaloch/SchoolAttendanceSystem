@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1370.0" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yourapp.attendance.controllers.PrincipalDashboardController">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0">
+            <left>
+                <AnchorPane prefHeight="709.0" prefWidth="241.0" style="-fx-background-color: green;" stylesheets="@../css/Style.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="136.0" fitWidth="114.0" layoutX="66.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" styleClass="nav-form" AnchorPane.bottomAnchor="583.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="27.0">
+                            <image>
+                                <Image url="@../images/memberDashboardIcon.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="1.0" />
+                            </effect>
+                        </ImageView>
+                        <Label fx:id="greetingUserMessage" layoutX="9.0" layoutY="147.0" prefHeight="40.0" prefWidth="226.0" text="Welcome Back!" textFill="WHITE" AnchorPane.bottomAnchor="533.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="147.0">
+                            <font>
+                                <Font name="Calibri Bold" size="33.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="principalDashboard" layoutX="-13.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleSidebarNavigation" prefHeight="61.0" prefWidth="249.0" styleClass="navv-btn" stylesheets="@../css/Style.css" text="Dashboard" AnchorPane.bottomAnchor="402.0" AnchorPane.leftAnchor="-13.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="257.0">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/home.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Line endX="76.0" layoutX="135.0" layoutY="221.0" startX="-100.0" strokeWidth="5.0" AnchorPane.bottomAnchor="499.5" AnchorPane.leftAnchor="32.5" AnchorPane.rightAnchor="30.5" AnchorPane.topAnchor="218.5" />
+                        <Button fx:id="principalLogout" layoutX="-7.0" layoutY="645.0" mnemonicParsing="false" onAction="#handleSidebarNavigation" prefHeight="61.0" prefWidth="240.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Logout">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="25.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fx:id="adminLogout" fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/logoutPng.png" />
+                                    </image>
+                                    <effect>
+                                        <ColorAdjust brightness="1.0" />
+                                    </effect>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                  <Button fx:id="teachersRecordInPrincipal" layoutX="-9.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleSidebarNavigation" prefHeight="61.0" prefWidth="249.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Employees Record">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="25.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/statistic.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="1.0" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="studentsRecordInPrincipal" layoutX="-9.0" layoutY="386.0" mnemonicParsing="false" onAction="#handleSidebarNavigation" prefHeight="61.0" prefWidth="249.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Students Record">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="25.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/statistic.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="1.0" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="principalSettings" layoutX="-9.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleSidebarNavigation" prefHeight="61.0" prefWidth="249.0" styleClass="nav-btn" stylesheets="@../css/Style.css" text="Settings">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="25.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/setting.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="1.0" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <AnchorPane prefHeight="635.0" prefWidth="952.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane prefHeight="720.0" prefWidth="1129.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <BorderPane prefHeight="463.0" prefWidth="1109.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <top>
+                                        <AnchorPane prefHeight="59.0" prefWidth="1129.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <ImageView fitHeight="35.0" fitWidth="39.0" layoutX="33.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" styleClass="whitecolor" AnchorPane.bottomAnchor="19.45708465576172" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="1057.0" AnchorPane.topAnchor="20.0">
+                                                    <image>
+                                                        <Image url="@../images/schoollogo.png" />
+                                                    </image>
+                                                    <effect>
+                                                        <ColorAdjust brightness="1.0" contrast="0.48" />
+                                                    </effect>
+                                                </ImageView>
+                                                <Text fill="WHITE" layoutX="78.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Government Boys High School, Taunsa Sharif" AnchorPane.bottomAnchor="25.05859375" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="668.693359375" AnchorPane.topAnchor="22.576171875">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                </Text>
+                                                <Line endX="-99.92040252685547" endY="65.99992370605469" layoutX="101.0" layoutY="4.0" rotate="0.1" startX="-100.03820037841797" startY="-3.9999654293060303" stroke="WHITE" />
+                                            </children>
+                                        </AnchorPane>
+                                    </top>
+                                    <center>
+                                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <AnchorPane layoutX="1100.0" prefHeight="643.0" prefWidth="28.0" style="-fx-background-color: green;" />
+                                                <AnchorPane layoutY="612.0" prefHeight="31.0" prefWidth="1101.0" style="-fx-background-color: green;" />
+                                                <Label fx:id="fetchPrincipalName" layoutX="25.0" layoutY="34.0" prefHeight="19.0" prefWidth="302.0" text="Principal Name: ">
+                                                    <font>
+                                                        <Font name="Arial Bold" size="15.0" />
+                                                    </font>
+                                                </Label>
+                                                <TableView fx:id="teacherDataShowTable" layoutX="8.0" layoutY="57.0" prefHeight="496.0" prefWidth="1077.0">
+                                                    <columns>
+                                                        <TableColumn fx:id="fetchTeachersId" prefWidth="77.0" text="Employee Id" />
+                                                        <TableColumn fx:id="fetchRelatedTeachersFName" minWidth="0.0" prefWidth="117.0" text="First Name" />
+                                                        <TableColumn fx:id="fetchRelatedTeachersLName" prefWidth="121.0" text="Last Name" />
+                                                        <TableColumn fx:id="fetchRelatedTeachersGender" prefWidth="98.0" text="Gendre" />
+                                                        <TableColumn fx:id="fetchRelatedTeachersClassAssigned" prefWidth="113.0" text="Class" />
+                                                        <TableColumn fx:id="fetchRelatedTeachersTodayAttend" prefWidth="109.0" text="Status" />
+                                                        <TableColumn fx:id="calculateAttendClassesTeacher" prefWidth="102.0" text="Attend Classes" />
+                                                        <TableColumn fx:id="calculateLeavedClassesTeacher" prefWidth="111.0" text="Absents" />
+                                          <TableColumn fx:id="calculateOnLeavedClasses" prefWidth="115.0" text="On Leave" />
+                                          <TableColumn fx:id="calculatePresentPercentage" prefWidth="113.0" text="Percentage" />
+                                                    </columns>
+                                                </TableView>
+                                                <Button fx:id="takeAttendanceOfTeachers" layoutX="890.0" layoutY="562.0" mnemonicParsing="false" onAction="#handleTakeAttendance" prefHeight="40.0" prefWidth="189.0" text="Take Attendance" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00d9ff" height="27.0" layoutX="451.0" layoutY="30.0" stroke="#34864c" strokeType="INSIDE" width="200.0" />
+                                    <Text layoutX="479.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today's Attendance" wrappingWidth="171.13671875">
+                                       <font>
+                                          <Font name="Arial" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Label fx:id="fetchTotalClasses" layoutX="890.0" layoutY="36.0" prefHeight="17.0" prefWidth="193.0" text="Total Classes:">
+                                       <font>
+                                          <Font name="Arial Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                            </children>
+                                        </AnchorPane>
+                                    </center>
+                                </BorderPane>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                    <effect>
+                        <ColorAdjust />
+                    </effect>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</StackPane>
